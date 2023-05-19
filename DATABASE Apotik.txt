@@ -1,0 +1,18 @@
+DATABASE : Apotik
+
+CREATE TABLE obat (
+	id_obat int,
+	nama varchar(255),
+	jenis varchar(255),
+	harga bigint,
+	stock int,
+	PRIMARY KEY (id_obat)
+)
+
+INSERT INTO obat (id_obat, nama, jenis, harga, stock)
+VALUES 
+  (1, 'Paracetamol', 'Analgesik', 10000, 50),
+  (2, 'Amoxicillin', 'Antibiotik', 15000, 30),
+  (3, 'Loratadine', 'Antihistamin', 8000, 20),
+  (4, 'Omeprazole', 'Antasida', 12000, 15),
+  (5, 'Aspirin', 'Analgesik', 5000, 40);
